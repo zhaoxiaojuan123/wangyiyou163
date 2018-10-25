@@ -11,7 +11,8 @@ import store from '../src/store/index'
 import { Provider } from "react-redux"
 import Search from './component/Search/Search'
 
-ReactDOM.render(<Router>
+ReactDOM.render(
+<Router>
     <Provider store={store}>
         <App>
             <Route path='/' exact={true} component={Home} />

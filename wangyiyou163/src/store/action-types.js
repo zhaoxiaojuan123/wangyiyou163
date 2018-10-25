@@ -1,0 +1,2 @@
+// export const CHANGE_TYPES="CHANGE_TYPES"
+export const SET_SLIDERS="SET_SLIDERS"

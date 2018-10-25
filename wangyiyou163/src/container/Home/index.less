@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@r:350/10rem;
+.Home{
+    width: 100%;
+    .HomeHeader{
+        width: 100%;
+        height: 50/@r;
+        top: 0;
+        position: fixed;
+        .line{
+            width: 100%;
+            height:25/@r;
+            // align-items: center;
+            padding: .4rem .4rem;
+            font-size: 24px;
+            // float: left;
+            display: inline-block;
+            position: relative;
+            .logo{
+                position: absolute;
+                width: 1.84rem;
+                height: .53333rem;
+                top:0.6rem;
+                background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-11d65342f9.png);
+                display: inline-block;
+                margin-right: .26667rem;
+                background-size: cover;
+                background-position: center;
+                // float: left;
+            }
+            .topSearchIpt{
+                position: absolute;
+                width: 250/@r;
+                height: 30/@r;
+                background:  rgb(237, 237, 237);
+                font-size: 15px;
+                color: rgb(102, 102, 102);
+                border-radius: 5px; 
+                margin-left:2.1rem;
+                .place{
+                    line-height:30/@r;   
+                    margin: auto;
+                    text-align:center;
+                    
+                }
+            
+            }
+        }
+        .tabs{
+            width: 100%;
+            height: 25/@r;
+            overflow: hidden;
+            position: relative;
+            // border-bottom: 0.1px solid #ccc;
+            .list{
+                // width: 100%;
+                height: 100%;
+                position: relative;
+                // transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+                // transition-duration: 0ms;
+                // transform: translate(-51px, 0px) translateZ(0px);
+                .tab{
+                    width: 20%;
+                    height:100%;
+                    float: left;
+                    font-size: 15px;
+                    color: rgb(51, 51, 51);
+                    position: relative;
+                    text-align:center; 
+                    margin: auto; 
+                    // border-bottom: 10px solid rgb(180, 40, 45);    
+                    .txt{ 
+                        width: 90%;
+                        line-height:30/@r;  
+                        position: relative;
+                    }
+                    .current{
+                        position: relative;
+                        // width: 90%;
+                        // width: 1rem;
+                        border-bottom: 18px solid rgb(180, 40, 45);
+                        color: rgb(180, 40, 45);
+                    }
+                   
+                }
+                
+
+                
+            }
+        }
+    }
+}

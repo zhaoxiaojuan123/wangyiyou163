@@ -1,6 +1,6 @@
 import React from "react"
 import './index.less'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 export default class Nav extends React.Component {
     render() {
 
@@ -25,7 +25,7 @@ export default class Nav extends React.Component {
                 <i className="iconfont icon-geren"></i>
                 <span>个人</span>
             </NavLink>
-            </div>
+        </div>
 
-                }
+    }
 }
