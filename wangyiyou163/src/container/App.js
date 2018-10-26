@@ -5,9 +5,11 @@ export default class App extends React.Component {
     render() {
 
         return <div>
-             <Nav/>
-             {this.props.children}
-            </div>
 
-                }
+             {this.props.children}
+            {!/#\/(personal|phonelogin|emaillogin|phonereg|emailreg|search)$/.test(window.location.hash)?<Nav></Nav>:null}
+
+        </div>
+
+    }
 }

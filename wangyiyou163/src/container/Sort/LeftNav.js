@@ -2,10 +2,14 @@ import React from 'react';
 import {NavLink} from 'react-router-dom'
 export default class LeftNav extends React.Component{
     render(){
-        return <div className="leftnav">
+        return <div className="leftnav" onClick={(e)=>{
+           //o console.log(e.target.dataset);
+            let type=e.target.dataset;
+            this.props.changeTypes(type);
+        }}>
             <div className="left">
-                <NavLink to={'/sort/recommend'}><p>推荐专区</p></NavLink>
-                <NavLink to={'/sort/autumn'}><p>秋季专区</p></NavLink>
+                <NavLink to={'/sort/recommend'} ><p data-type="recommend">推荐专区</p></NavLink>
+                <NavLink to={'/sort/autumn'}><p data-type="autumn">秋季专区</p></NavLink>
                 <NavLink to={'/sort/new'}><p>新品专区</p></NavLink>
                 <NavLink to={'/sort/pop'}><p>爆品专区</p></NavLink>
                 <NavLink to={'/sort/family'}><p>居家</p></NavLink>

@@ -20,8 +20,16 @@ app.use(function(req,res,next){
 app.use(bodyParser.json());
 let sliders = require('./mock/sliders');
 app.get('/getSliders',function(req,res){
-   res.json(sliders);
+    res.json(sliders);
 });
+
+let headerImg=require('./mock/HeaderImg')
+app.get('/getHeaderImg/:title',function (req,res) {
+    let title=req.params.title;
+    let list = JSON.parse(JSON.stringify(headerImg));
+    res.json({list});
+})
+
 let lessons = require('./mock/lessons');
 // http://localhost:3000/getLessons/vue?offset=0&limit=5
 app.get('/getLessons/:category',function(req,res){

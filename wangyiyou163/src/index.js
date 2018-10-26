@@ -22,4 +22,4 @@ ReactDOM.render(<Router>
             <Route path='/search' component={Search} />
         </App>
     </Provider>
-</Router>, window.root)
+</Router>, window.root);

@@ -1,11 +1,27 @@
 import React from 'react';
 import HeaderImg from '../public/HeaderImg';
-import Circle  from '../public/Circle'
+import Circle  from '../public/Circle';
+import Circledata from '../../../../server/mock/Circledata';
+import './index.less'
 export default class Recommend extends React.Component{
+    constructor(){
+        super();
+        this.state={circledata:Circledata}
+    }
     render(){
         return <div className="recommend">
-            <HeaderImg/>
-            <Circle/>
+            <div className="header-img">
+                <img src="http://yanxuan.nosdn.127.net/7e2963bccfe5f913d45b99d9603c7332.jpg?imageView&thumbnail=0x196&quality=75" alt=""/>
+            </div>
+             <ul className="list">
+                 {this.state.circledata.map((item,index)=>{
+                     return <li key={index} className="item">
+                         <img src={item.url} alt=""/>
+                         <div className="title">{item.title}</div>
+                     </li>
+                 })}
+             </ul>
+
         </div>
     }
 }

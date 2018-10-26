@@ -16,9 +16,10 @@ import Language from './content/Language';
 import Special from './content/Special';
 
 export default class RightContent extends React.Component{
+
     render(){
         return <div className="right-content">
-            <Route path="/sort/recommend" component={Recommend}></Route>
+            <Route path="/sort/recommend" component={Recommend} ></Route>
             <Route path="/sort/autumn" component={Autumn}></Route>
             <Route path="/sort/new" component={New}></Route>
             <Route path="/sort/pop" component={Pop}></Route>
