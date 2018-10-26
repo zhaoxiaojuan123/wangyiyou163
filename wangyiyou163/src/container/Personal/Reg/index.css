@@ -1,0 +1,43 @@
+body {
+  background: #fff;
+}
+.reg {
+  background: #fff;
+}
+.reg .view {
+  width: 100%;
+  overflow: hidden;
+}
+.reg .view .title {
+  margin-top: 0.40667rem;
+  padding: 0 0.53333rem 0 0;
+  text-align: center;
+}
+.reg .view .title span {
+  font-size: 0.48rem;
+  line-height: 0.69333rem;
+  color: #333;
+}
+.reg .view .ursBox {
+  margin-top: 0.53333rem;
+}
+.reg .view .ursBox-3 {
+  height: 8.82667rem;
+}
+.reg .view .foot {
+  padding: 0 0.53333rem;
+}
+.reg .view .foot a {
+  text-decoration: none;
+}
+.reg .view .foot .btn {
+  text-align: center;
+}
+.reg .view .foot .btn span {
+  font-size: 0.37333rem;
+  line-height: 0.53333rem;
+  color: #333;
+}
+.reg .view .foot .btn-2 {
+  margin-top: 0.74667rem;
+}

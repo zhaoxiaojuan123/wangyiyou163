@@ -10,6 +10,11 @@ import App from './container/App'
 import store from '../src/store/index'
 import { Provider } from "react-redux"
 import Search from './component/Search/Search'
+import PhonelLogin from "./container/Personal/login/PhoneLogin";
+import EmailLogin from "./container/Personal/login/EmailLogin";
+import PhonelReg from "./container/Personal/Reg/PhoneReg";
+import EmailReg from "./container/Personal/Reg/EmailReg";
+
 
 ReactDOM.render(<Router>
     <Provider store={store}>
@@ -18,8 +23,17 @@ ReactDOM.render(<Router>
             <Route path='/goods' component={Goods} />
             <Route path='/sort' component={Sort} />
             <Route path='/cart' component={Cart} />
-            <Route path='/personal' component={Personal} />
+           
             <Route path='/search' component={Search} />
+            <Route path='/personal' component={Personal} />
+
+            <Route path='/phonelogin' component={PhonelLogin}/>
+            <Route path='/emaillogin' component={EmailLogin}/>
+
+            <Route path='/phonereg' component={PhonelReg}/>
+            <Route path='/emailreg' component={EmailReg}/>
         </App>
+        
     </Provider>
+    
 </Router>, window.root)

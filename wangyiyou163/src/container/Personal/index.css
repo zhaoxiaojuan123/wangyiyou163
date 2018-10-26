@@ -1,0 +1,113 @@
+.m-loginTypes {
+  position: relative;
+  height: 100%;
+  background: #F2F5F4;
+}
+.m-loginTypes .logoWrap {
+  text-align: center;
+  padding-top: 2.13333rem;
+  padding-bottom: 2.13333rem;
+}
+.m-loginTypes .logoWrap img {
+  width: 3.57333rem;
+  height: 1.2rem;
+}
+.m-loginTypes .btnWrap {
+  padding: 0 0.53333rem;
+  margin-bottom: 2.73333rem;
+}
+.m-loginTypes .btnWrap a {
+  text-decoration: none;
+}
+.m-loginTypes .btnWrap .w-button {
+  margin-bottom: 0.42667rem;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.37333rem;
+  color: #fff;
+  border: 1px solid #b4282d;
+  background-color: #b4282d;
+  overflow: hidden;
+}
+.m-loginTypes .btnWrap .w-button-xl {
+  height: 1.25333rem;
+  line-height: 1.25333rem;
+}
+.m-loginTypes .btnWrap .w-button-block {
+  display: block;
+  width: 100%;
+}
+.m-loginTypes .btnWrap .w-button-ghostRed {
+  border-color: #b4282d;
+  color: #b4282d;
+  background-color: transparent;
+}
+.m-loginTypes .btnWrap .btn {
+  color: #333;
+  font-size: 0.37333rem;
+  text-align: center;
+  width: 100%;
+}
+.m-loginTypes .btnWrap .iconfont {
+  margin-right: 0.21333rem;
+  position: relative;
+  top: -0.02667rem;
+  font-size: 0.6rem;
+  text-align: center;
+}
+.m-loginTypes .btnWrap .icon-shouji {
+  vertical-align: middle;
+}
+.m-loginTypes .btnWrap .icon-youxiang {
+  vertical-align: middle;
+}
+.m-loginTypes .btnWrap .icon-fanhui {
+  vertical-align: middle;
+}
+.m-loginTypes .thirdWrap {
+  position: absolute;
+  top: 16rem;
+  width: 100%;
+  left: 0;
+  bottom: 1.06667rem;
+  height: 0.53333rem;
+  text-align: center;
+}
+.m-loginTypes .thirdWrap .qq {
+  border-left: 1px solid #979797;
+  border-right: 1px solid #979797;
+}
+.m-loginTypes .thirdWrap .itemWrap {
+  height: 0.53333rem;
+  display: inline-block;
+  text-align: center;
+  padding: 0 0.53333rem;
+}
+.m-loginTypes .thirdWrap .itemWrap .item {
+  height: 0.53333rem;
+  position: relative;
+  top: -0.023333rem;
+}
+.m-loginTypes .thirdWrap .itemWrap .item .iconfont {
+  position: relative;
+  top: 0.03333rem;
+  display: inline-block;
+  width: 0.53333rem;
+  height: 0.53333rem;
+  font-size: 16px;
+  text-align: center;
+  color: #7F7F7F;
+}
+.m-loginTypes .thirdWrap .itemWrap .item .name {
+  font-size: 0.37333rem;
+  line-height: 0.53333rem;
+  height: 0.53333rem;
+  color: #7F7F7F;
+  margin-left: 0.06667rem;
+}
+.m-loginTypes .thirdWrap .itemWrap .item .icon-qq {
+  font-size: 20px;
+}
+.m-loginTypes .thirdWrap .itemWrap .item .icon-weibo {
+  font-size: 24px;
+}
