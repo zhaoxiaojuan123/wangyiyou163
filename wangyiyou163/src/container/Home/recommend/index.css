@@ -1,4 +1,41 @@
-.bbb {
-  margin-top: 2rem;
-  height: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+}
+.recommend {
+  width: 100%;
+  height: 6.3rem;
+}
+.recommend .indexFloor {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.recommend .indexFloor .home-swipe {
+  width: 100%;
+  height: 87%;
+}
+.recommend .indexFloor .home-swipe .carousel {
+  width: 100%;
+  height: 100%;
+}
+.recommend .indexFloor .home-swipe .carousel img {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.recommend .indexFloor .go-grow {
+  width: 100%;
+  height: 13%;
+  display: flex;
+}
+.recommend .indexFloor .go-grow .item {
+  flex: 1;
+  float: left;
+  text-align: center;
+}
+.recommend .indexFloor .go-grow .item i {
+  color: #b4282d;
+  font-size: 15px;
+  margin-right: 0.1rem ;
 }

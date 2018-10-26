@@ -94,12 +94,9 @@ export default class HomeHeader extends React.Component {
                         </span>
                         </div>
                     </NavLink>
-
                 </div>
-
-
             </div>
-
+           
         </div>
     }
 

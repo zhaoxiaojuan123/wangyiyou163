@@ -11,12 +11,14 @@ import Kitchen from "./kitchen/kitchen";
 import Body from "./boby/boby";
 import Style from "./style/style";
 import Feature from "./feature/feature";
-
 export default class HomeHeaderRoute extends React.Component {
+    constructor(){
+        super();
+     
+    }
     render() {
-        return <div className='aaa'>
-            <Route path="/home/" exact={true} component={Recommend}></Route>
-            <Route path="/home/recommend" component={Recommend}></Route>
+        return <div className="hometop">
+            <Route path="/home/recommend" exact={true} component={Recommend}></Route>
             <Route path="/home/live" component={Live}></Route>
             <Route path="/home/shoes" component={Shoes}></Route>
             <Route path="/home/clothes" component={Clothes}></Route>

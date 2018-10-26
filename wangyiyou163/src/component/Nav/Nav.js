@@ -5,7 +5,7 @@ export default class Nav extends React.Component {
     render() {
 
         return <div className="footer">
-            <NavLink to={'/'}>
+            <NavLink to={'/home/recommend'}>
                 <i className="iconfont icon-shouye"></i>
                 <span>首页</span>
             </NavLink>
