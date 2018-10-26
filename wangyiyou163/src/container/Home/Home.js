@@ -4,6 +4,7 @@ import HomeHeader from "./HomeHeader"
 import HomeSlider from "./HomeSlider"
 import { connect } from "react-redux";
 import actions from "../../store/action/home"
+import HomeHeaderRoute from "./HomeHeaderRoute";
 
  class Home extends React.Component {
      componentDidMount(){
@@ -16,7 +17,10 @@ import actions from "../../store/action/home"
         return <div className="Home">
         
             <HomeHeader></HomeHeader>
-            <HomeSlider sliders={this.props.sliders}></HomeSlider>
+            {/* <HomeSlider sliders={this.props.sliders}></HomeSlider> */}
+            <HomeHeaderRoute>
+                {/* {this.props.children} */}
+            </HomeHeaderRoute>
         </div>
 
     }

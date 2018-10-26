@@ -21,6 +21,8 @@ ReactDOM.render(
             <Route path='/cart' component={Cart} />
             <Route path='/personal' component={Personal} />
             <Route path='/search' component={Search} />
+            <Route path='/home' component={Home}/>
+            {/* <Redirect to="/home"/> */}
         </App>
     </Provider>
 </Router>, window.root)

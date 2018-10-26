@@ -55,7 +55,7 @@
   height: 100%;
   position: relative;
 }
-.Home .HomeHeader .tabs .list .tab {
+.Home .HomeHeader .tabs .list a .tab {
   width: 20%;
   height: 100%;
   float: left;
@@ -65,13 +65,28 @@
   text-align: center;
   margin: auto;
 }
-.Home .HomeHeader .tabs .list .tab .txt {
+.Home .HomeHeader .tabs .list a .tab .txt {
   width: 90%;
   line-height: 0.85714286rem;
   position: relative;
 }
-.Home .HomeHeader .tabs .list .tab .current {
+.Home .HomeHeader .tabs .list a.active .tab {
+  width: 20%;
+  height: 100%;
+  float: left;
+  font-size: 15px;
+  color: #b4282d;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+.Home .HomeHeader .tabs .list a.active .tab .txt {
+  width: 90%;
+  line-height: 0.85714286rem;
   position: relative;
   border-bottom: 18px solid #b4282d;
-  color: #b4282d;
+}
+.Home .aaa {
+  margin-top: 2rem;
+  height: 5rem;
 }
