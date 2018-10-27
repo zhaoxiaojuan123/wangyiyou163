@@ -1,5 +1,5 @@
 body {
-  background-color: #f4f4f4;
+  background: #f4f4f4;
 }
 .m-mainView .m-hd {
   position: fixed;
@@ -35,7 +35,6 @@ body {
   z-index: 1;
   height: .93333rem;
   padding: 0 0.4rem 0 0.4rem;
-  background: #f4f4f4;
   display: flex;
   flex-flow: row nowrap;
   -webkit-box-align: center;

@@ -8,7 +8,7 @@ export default class Cart extends React.Component {
     render() {
         return <div className="m-mainView">
             <div className="m-hd">
-                 <div className="m-cartHd">
+                <div className="m-cartHd">
                     <span className="logo">购物车</span>
                     <div className="right" >
                         <a className="cart-coupon">

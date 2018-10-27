@@ -7,7 +7,9 @@ export default class App extends React.Component {
         return <div>
              
              {this.props.children}
-             <Nav/>
+             
+             {!/#\/(personal|phonelogin|emaillogin|phonereg|emailreg)$/.test(window.location.hash)?<Nav></Nav>:null}
+             
             </div>
 
         }
