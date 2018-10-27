@@ -3,12 +3,16 @@ import {getSliders} from "../../api/home"
 export default{
     getSlider(){
         return function(dispatch,getState){
-            getSliders().then(sliders=>{
-                dispatch({
-                    type:Types.SET_SLIDERS,
-                    payload:sliders
+            setTimeout(()=>{
+                getSliders().then(sliders=>{
+                    dispatch({
+                        type:Types.SET_SLIDERS,
+                        payload:sliders
+                    })
                 })
-            })
+
+            },0)
+           
         }
     }
 }

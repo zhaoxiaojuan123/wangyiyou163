@@ -3,6 +3,7 @@ import ReactSwipe from "react-swipe"
 import HomeGrow from "./homeGrow";
 // import "./index.less"
 export default class HomeSlider extends React.Component {
+    
     render() {
         let option = {
             continuous: true,

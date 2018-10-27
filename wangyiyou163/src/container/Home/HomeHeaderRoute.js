@@ -18,7 +18,8 @@ export default class HomeHeaderRoute extends React.Component {
     }
     render() {
         return <div className="hometop">
-            <Route path="/home/recommend" exact={true} component={Recommend}></Route>
+            <Switch>
+            <Route path="/home/recommend" exact component={Recommend}></Route>
             <Route path="/home/live" component={Live}></Route>
             <Route path="/home/shoes" component={Shoes}></Route>
             <Route path="/home/clothes" component={Clothes}></Route>
@@ -29,6 +30,7 @@ export default class HomeHeaderRoute extends React.Component {
             <Route path="/home/boby" component={Body}></Route>
             <Route path="/home/style" component={Style}></Route>
             <Route path="/home/feature" component={Feature}></Route>
+            </Switch>
         </div>
     }
 }

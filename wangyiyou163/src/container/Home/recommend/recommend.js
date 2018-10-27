@@ -4,11 +4,13 @@ import HomeGrow from "./HomeGrow"
 import { connect } from "react-redux";
 import actions from "../../../store/action/home"
 import "./index.less"
+import HomeBoss from "./HomeBoss";
+import HomeMenu from "./HomeMenu";
 class Recommend extends React.Component {
     constructor() {
         super();
     }
-    componentDidMount() {
+    componentWillMount() {
         this.props.getSlider();
     }
 
@@ -16,8 +18,11 @@ class Recommend extends React.Component {
         // console.log(this.props.sliders,9999);   
         return <div className='recommend'>
             <div className="indexFloor">
-                <HomeSlider sliders={this.props.sliders}></HomeSlider>
+            {this.props.sliders.length?<HomeSlider sliders={this.props.sliders}></HomeSlider>:null}
                 <HomeGrow></HomeGrow>
+                <HomeBoss></HomeBoss>
+                <HomeMenu></HomeMenu>
+                {/* {this.props.children} */}
             </div>
         </div>
     }

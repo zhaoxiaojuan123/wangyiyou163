@@ -5,12 +5,14 @@ import HomeHeaderRoute from "./HomeHeaderRoute";
 
 export default class Home extends React.Component {
     
+
     render() {
         return <div className="Home">
-        
-            <HomeHeader></HomeHeader>
-            <HomeHeaderRoute/>
-          
+
+            <HomeHeader></HomeHeader> 
+            
+             <HomeHeaderRoute />
+             {/* {this.props.children} */}
         </div>
 
     }

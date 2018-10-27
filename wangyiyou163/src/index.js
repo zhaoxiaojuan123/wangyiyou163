@@ -9,22 +9,23 @@ import Personal from './container/Personal/Personal'
 import App from './container/App'
 import store from '../src/store/index'
 import { Provider } from "react-redux"
-import Search from './component/Search/Search'
-import Recommend from "./container/Home/recommend/recommend";
 
 ReactDOM.render(
 <Router>
     <Provider store={store}>
         <App>
+            <Switch>
             <Route path='/' exact={true} component={Home} />
             <Route path='/home'   component={Home} />
             <Route path='/goods' component={Goods} />
             <Route path='/sort' component={Sort} />
             <Route path='/cart' component={Cart} />
             <Route path='/personal' component={Personal} />
-            <Route path='/search' component={Search} />
+            {/* <Route path='/search' component={Search} /> */}
             <Route path='/home/recommend'  component={Home}/>
             {/* <Redirect to="/home"/> */}
+            </Switch>
+            
         </App>
     </Provider>
 </Router>, window.root)
