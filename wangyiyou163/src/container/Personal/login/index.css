@@ -9,13 +9,21 @@
   text-align: center;
   margin-top: 0.74667rem;
   margin-bottom: 0;
+  height: 2.8rem;
 }
 .login .loginWrap .logo img {
   width: 2.56rem;
   height: 0.85333rem;
 }
-.login .loginWrap .ursBox {
-  margin-top: 0.53333rem;
+.login .loginWrap .u-tab {
+  position: absolute;
+  top: 8.25rem;
+  margin-right: 0.8rem;
+  bottom: 2.22rem;
+  right: 0;
+  padding: 0;
+  font-size: 0.38rem;
+  z-index: 20;
 }
 .login .loginWrap .foot {
   padding: 0 0.53333rem;
@@ -33,11 +41,12 @@
 }
 .login .loginWrap .foot .w-button-block {
   display: block;
-  width: 100%;
+  width: 95%;
+  margin-left: 0.2rem;
 }
 .login .loginWrap .foot .w-button-xl {
-  height: 1.25333rem;
-  line-height: 1.25333rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
 }
 .login .loginWrap .foot .w-button-ghostRed {
   border-color: #b4282d;
@@ -58,4 +67,74 @@
 .login .loginWrap-1 {
   visibility: visible;
   height: auto;
+}
+.inputbox .u-input {
+  width: 90%;
+  padding: 0 0 0.3rem 0.3rem;
+}
+.inputbox .u-input input {
+  margin: 0.5rem;
+  font-size: 0.35rem;
+  padding-bottom: 0.3rem;
+  width: 95%;
+  border: 0;
+  border-bottom: 0.2px solid #979797;
+}
+.inputbox .u-input .pcbtn {
+  position: absolute;
+  right: 0.9rem;
+  top: 6.5rem;
+  z-index: 100;
+}
+.inputbox .u-input .pcbtn a {
+  display: block;
+  width: 2.3rem;
+  height: 0.75rem;
+  text-align: center;
+  color: #333;
+  font-size: 0.4rem;
+  background: #fff;
+  line-height: 0.75rem;
+  text-decoration: none;
+  border: 1px solid #7F7F7F;
+  border-radius: 4px;
+}
+.inputbox .u-input .m-unlogin {
+  height: 0.582rem;
+  line-height: 0.582rem;
+  padding: 0.1rem 0 0.1rem 0;
+}
+.inputbox .u-input .m-unlogin a {
+  text-decoration: none;
+  color: #7F7F7F;
+  font-size: 0.38rem;
+  margin-left: 0.5rem;
+}
+.inputbox .u-input .m-unlogin .forget {
+  margin-left: 5.2rem;
+}
+.inputbox .u-input .loginbox {
+  position: relative;
+  margin: 0.426rem 0 0.313rem 0;
+  top: 0;
+  left: 0;
+  bottom: 0.426rem;
+  width: 100%;
+}
+.inputbox .u-input .loginbox a {
+  text-decoration: none;
+}
+.inputbox .u-input .loginbox .u-loginbtn {
+  position: relative;
+  margin-left: 0.4rem;
+  background: #b4282d;
+  height: 1.28rem;
+  font-size: 0.4rem;
+  line-height: 1.28rem;
+  border-radius: 3px;
+  display: block;
+  width: 95%;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
 }

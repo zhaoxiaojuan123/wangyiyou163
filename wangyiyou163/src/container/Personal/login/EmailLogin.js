@@ -2,6 +2,7 @@ import React from "react";
 import './index.less';
 import BackHeader from "../../../component/BackHeader/BackHeader";
 import {NavLink} from "react-router-dom";
+import EmailInput from "./emailInput";
 export default class EmailLogin extends React.Component{
     render(){
         return <div className="login">
@@ -11,9 +12,7 @@ export default class EmailLogin extends React.Component{
                     <div className="logo">
                         <img src="//yanxuan.nosdn.127.net/bd139d2c42205f749cd4ab78fa3d6c60.png"></img>
                     </div>
-                    <div className="ursBox ursBox-2">
-                        
-                    </div>
+                    <EmailInput/>
                     <div className="foot">
                         <NavLink to="/personal">
                             <div className="w-button w-button-xl w-button-block w-button-ghostRed">

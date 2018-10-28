@@ -13,6 +13,7 @@ import Search from './component/Search/Search'
 import PhonelLogin from "./container/Personal/login/PhoneLogin";
 import EmailLogin from "./container/Personal/login/EmailLogin";
 import PhonelReg from "./container/Personal/Reg/PhoneReg";
+import Loginsuccess from "./container/Personal/login/loginsuccess";
 
 
 ReactDOM.render(<Router>
@@ -28,9 +29,8 @@ ReactDOM.render(<Router>
 
             <Route path='/phonelogin' component={PhonelLogin}/>
             <Route path='/emaillogin' component={EmailLogin}/>
-
+            <Route path="/loginsuccess" component={Loginsuccess}></Route>
             <Route path='/phonereg' component={PhonelReg}/>
-            {/* <Route path='/emailreg' component={EmailReg}/> */}
         </App>
         
     </Provider>

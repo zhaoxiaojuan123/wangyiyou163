@@ -1,3 +1,6 @@
+body {
+  background: #fff;
+}
 .reg {
   background: #fff;
 }
@@ -16,12 +19,6 @@
   line-height: 0.69333rem;
   color: #333;
 }
-.reg .view .ursBox {
-  margin-top: 0.53333rem;
-}
-.reg .view .ursBox-3 {
-  height: 8.82667rem;
-}
 .reg .view .foot {
   padding: 0 0.53333rem;
 }
@@ -37,7 +34,11 @@
   color: #333;
 }
 .reg .view .foot .btn-2 {
-  margin-top: 0.74667rem;
+  margin-top: 0.54667rem;
+}
+.reg .view .foot .btn-2 .icon-fanhui {
+  font-size: 0.55rem;
+  color: #333;
 }
 .inputbox .u-input {
   width: 90%;
@@ -46,7 +47,7 @@
 .inputbox .u-input input {
   margin: 0.5rem;
   font-size: 0.35rem;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.3rem;
   width: 95%;
   border: 0;
   border-bottom: 0.2px solid #979797;
@@ -54,7 +55,7 @@
 .inputbox .u-input .pcbtn {
   position: absolute;
   right: 0.9rem;
-  top: 6.7rem;
+  top: 6.5rem;
   z-index: 100;
 }
 .inputbox .u-input .pcbtn a {
@@ -69,4 +70,59 @@
   text-decoration: none;
   border: 1px solid #7F7F7F;
   border-radius: 4px;
+}
+.inputbox .u-input .loginbox {
+  position: relative;
+  margin: 0.426rem 0 0.313rem 0;
+  top: 0;
+  left: 0;
+  bottom: 0.426rem;
+  width: 100%;
+}
+.inputbox .u-input .loginbox a {
+  text-decoration: none;
+}
+.inputbox .u-input .loginbox .u-loginbtn {
+  position: relative;
+  margin-left: 0.4rem;
+  background: #b4282d;
+  height: 1.28rem;
+  font-size: 0.4rem;
+  line-height: 1.28rem;
+  border-radius: 3px;
+  display: block;
+  width: 95%;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+}
+.inputbox .fur-item {
+  position: relative;
+  font-size: 0.35rem;
+  padding-bottom: 0.4rem;
+  width: 95%;
+  margin-left: 0.8rem;
+}
+.inputbox .fur-item .check {
+  border: 1px solid #7f7f7f;
+  margin-right: 0.1rem;
+}
+.inputbox .fur-item .check input {
+  opacity: 0;
+  width: 0.4rem;
+  height: 0.4rem;
+  font-size: 0.375rem;
+  font-weight: normal;
+  background: #fff;
+  padding-left: 0;
+  color: #333;
+}
+.inputbox .fur-item a {
+  text-decoration: none;
+  color: #007AFF;
+  line-height: 20px;
+  cursor: pointer;
+}
+.inputbox .fur-agree {
+  color: #7f7f7f;
 }

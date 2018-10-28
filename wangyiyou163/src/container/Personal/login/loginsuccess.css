@@ -1,0 +1,140 @@
+body {
+  height: 20rem;
+}
+.m-profile {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.m-profile .g-row {
+  display: flex;
+  height: 3.6rem;
+  background: #c7ad76;
+  padding-left: 0.4rem;
+  overflow: hidden;
+}
+.m-profile .g-row .left {
+  flex: 1;
+  padding: 0.85333rem 0 0.85333rem 0;
+  width: 7.2rem;
+  display: flex;
+  align-items: center;
+}
+.m-profile .g-row .left .avatar {
+  vertical-align: middle;
+  width: 1.89333rem;
+  height: 1.89333rem;
+  border-radius: 50%;
+}
+.m-profile .g-row .left .info {
+  margin-left: 0.4rem;
+  line-height: 1;
+  overflow: hidden;
+}
+.m-profile .g-row .left .info .nickname {
+  color: #fff;
+  font-size: 0.48rem;
+  line-height: 1.2;
+  margin-bottom: 0.13333rem;
+}
+.m-profile .g-row .left .info .memberTitle0 {
+  color: #fff;
+  font-size: 0.37333rem;
+}
+.m-profile .g-row .right {
+  flex: 1;
+  position: relative;
+  width: 2.8rem;
+  padding-left: 1.6rem;
+  height: 100%;
+}
+.m-profile .g-row .right .supermember {
+  margin-top: 1.38667rem;
+  width: 2.70667rem;
+  height: 1.12rem;
+  background: #444;
+  border-top-left-radius: 0.85333rem;
+  border-bottom-left-radius: 0.85333rem;
+  animation: shake 1s linear 3;
+}
+.m-profile .g-row .right .supermember .u-icon {
+  margin: auto 0.12rem;
+  width: 0.74667rem;
+  height: 0.74667rem;
+  background-repeat: no-repeat;
+}
+.m-profile .g-row .right .supermember .u-icon-supermember {
+  background-position: 0 -2.24rem;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/ucenter-s4184c581c7-cc8ba9695e.png);
+  background-size: 0.85333rem 15.68rem;
+}
+.m-profile .g-row .right .supermember .word {
+  display: inline-block;
+  padding: 0.13333rem 0;
+  color: #EDE7DB;
+  vertical-align: middle;
+}
+.m-profile .g-row .right .supermember .word .line1 {
+  font-size: 0.34667rem;
+  line-height: 0.48rem;
+}
+.m-profile .g-row .right .supermember .word .line2 {
+  font-size: 0.26667rem;
+  line-height: 0.37333rem;
+  vertical-align: middle;
+}
+.m-profile .g-row .right .supermember .word .line2 .icon-fanhui1 {
+  font-size: 0.15rem;
+  margin-left: 0.05rem;
+}
+.m-uMenu {
+  margin-bottom: 0.53333rem;
+  background: #fff;
+}
+.m-uMenu li {
+  list-style: none;
+}
+.m-uMenu .item {
+  float: left;
+  width: 33%;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.m-uMenu .item a {
+  text-decoration: none;
+}
+.m-uMenu .item .m-uMenuItem {
+  display: block;
+  height: 2rem;
+  padding-top: 0.6rem;
+  text-align: center;
+}
+.m-uMenu .item .m-uMenuItem .iconfont {
+  font-size: 0.7rem;
+  color: #7F7F7F;
+  vertical-align: middle;
+  margin-bottom: 0.21333rem;
+}
+.m-uMenu .item .m-uMenuItem .txt {
+  margin-top: 0.2rem;
+  display: block;
+  font-size: 0.32rem;
+  line-height: 1;
+  color: #333;
+}
+.g-button .w-button {
+  margin-top: 13.5rem;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 0.37333rem;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 1.28rem;
+  line-height: 1.28rem;
+  border: 1px solid #fff;
+  background-color: #968a7c;
+  color: #333;
+}

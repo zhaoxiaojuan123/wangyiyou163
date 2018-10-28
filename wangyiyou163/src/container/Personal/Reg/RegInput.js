@@ -17,8 +17,17 @@ export default class RegInput extends React.Component{
                 <div className="f-cb loginbox">
                     <a className="u-loginbtn">注册</a>
                 </div>
-                
             </div>
+            <div className="fur-item fur-agree">  
+                <span className="check">
+                    <input type="checkbox"/>
+                </span>  
+                    
+                    我同意
+                    <a href="//reg.163.com/agreement_mobile.shtml">《服务条款》</a>
+                    和 
+                    <a href="//reg.163.com/agreement_mobile_ysbh.shtml">《网易隐私政策》</a>
+             </div>
             
         </div>
     }
