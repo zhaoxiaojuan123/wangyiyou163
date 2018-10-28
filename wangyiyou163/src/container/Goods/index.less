@@ -1,10 +1,13 @@
 
+html,body{
+  width: 100%;
+  height: 100%;
+} 
 .goods{
   width: 100%;
-  margin-top: 2.5rem;
   display: block;
   height: 100%;
-  
+  background: #f4f4f4;
 }
 .home-swipe{
     height:5.5rem;
@@ -27,13 +30,14 @@
      height: 2.5rem;
      box-sizing: border-box;
      margin-bottom: 0.2rem;
-     padding: 0.4rem 0.3rem 0.3rem;
+    
      width: 100%;
+     background: #fff;
      .mslider-box{
       overflow: auto;
        display: flex;
-       
-    
+       background: #fff;
+       padding: 0.4rem 0.3rem 0.3rem;
        .mslider-a{
          width: 2.2rem;
          height: 2.8rem;
@@ -142,17 +146,18 @@
 
 .main{
   width: 100%;
+  
   margin-bottom: 0.5rem;
 }
 .container{
   display:block;
   position: relative;
-  margin-top: 0.8rem;
-  padding: 0.12rem 0.36rem;
+  top: 1.8rem;
+  padding: 0.12rem 0.33rem;
   width: 100%;
   box-sizing: border-box;
-  height: 1000px;
-
+  height: 100%;
+background: #fff;
   .tuijian{
     text-align: center;
     color: #333;
@@ -163,7 +168,7 @@
     width: 100%;
   }
   .chufang1{
-    margin-top: 11rem;
+    margin-top: 1rem;
   }
   .chufang ,.chufang1{
     width: 100%;
@@ -200,6 +205,7 @@
         height: 2rem;
         box-sizing: border-box;
         border: 1px solid #d9d9d9;
+        background: #fff;
         .line1{
           display: block;
           padding: 0.1rem;
@@ -233,12 +239,18 @@
      
     }
   }
-  .chufang-a2 ,.chufang-a3{
+  .content-a{
+    background: #f4f4f4;
+    width: 100%;
+    display: block;
+    height: 5rem;
+  }
+  .chufang-a2 ,.chufang-a3,.chufang-a4,.chufang-a5{
     position: absolute;
     top:9rem;
-    left: 0.3rem;
-    overflow: hidden;
+    left: 0.35rem;
     display: flex;
+    background: #fff;
     flex: 1;
     flex-direction: row;
     width: 93%;
@@ -318,6 +330,7 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
+      white-space: nowrap;
       font-size: 0.32rem;
       line-height: 1.5;
       color:#7f7f7f;
@@ -334,6 +347,28 @@
     width: 93%;
     box-sizing: border-box;
     }
+    .chufang-a4{
+      position: absolute;
+      top:25.5rem;
+      left: 0.3rem;
+      overflow: hidden;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      width: 93%;
+      box-sizing: border-box;
+      }
+      .chufang-a5{
+        position: absolute;
+        top:29.5rem;
+        left: 0.3rem;
+        overflow: hidden;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        width: 93%;
+        box-sizing: border-box;
+        }
 
 }
 
