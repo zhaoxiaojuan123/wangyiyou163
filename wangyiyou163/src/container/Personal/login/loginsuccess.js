@@ -114,10 +114,7 @@ export default class Loginsuccess extends React.Component{
             </div>
 
             <div className="g-button">
-    
-                    <button class="w-button">退出登录</button>
- 
-                
+                    <button className="w-button">退出登录</button>                
             </div>
        
         </div>

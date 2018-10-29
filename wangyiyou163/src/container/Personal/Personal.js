@@ -54,8 +54,7 @@ export default class Personal extends React.Component {
                         <i className="iconfont icon-weibo"></i>
                         <span className="name">微博</span>
                     </span>
-                </div>
-           
+                </div> 
            </div>
         </div>
 

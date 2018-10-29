@@ -17,10 +17,6 @@ export default class EmailInput extends React.Component{
                         忘记密码
                     </a> 
                 </div>
-               
-                <div className="f-cb loginbox">
-                    <a className="u-loginbtn">登录</a>
-                </div>
             </div>
             
         </div>

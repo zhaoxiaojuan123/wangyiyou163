@@ -14,6 +14,9 @@ export default class EmailLogin extends React.Component{
                     </div>
                     <EmailInput/>
                     <div className="foot">
+                        <div className="f-cb loginbox">
+                            <span className="u-loginbtn">登录</span>
+                        </div>
                         <NavLink to="/personal">
                             <div className="w-button w-button-xl w-button-block w-button-ghostRed">
                                 <span>其他登录方式</span>

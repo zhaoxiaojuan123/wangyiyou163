@@ -16,23 +16,27 @@ export default class PhonelLogin extends React.Component{
                     <PhoneInput/>
 
                     <div className="u-tab f-cb">
-                        <a className="tab0">使用密码验证登录</a>
+                        <span>使用密码验证登录</span>
                     </div>
 
                     <div className="foot">
+                        <NavLink to="/loginsuccess">
+                            <div className="f-cb loginbox">
+                                <span className="u-loginbtn">登录</span>
+                            </div>
+                        </NavLink>
+
                         <NavLink to="/personal">
                             <div className="w-button w-button-xl w-button-block w-button-ghostRed">
                                 <span>其他登录方式</span>
                             </div>
                         </NavLink>
-                        
                         <NavLink to="/phonereg">
                             <div className="btn btn-1">
                                 <span>注册账号</span>
                                 <i className="iconfont icon-fanhui"></i>
                             </div>
-                        </NavLink>
-                        
+                        </NavLink>          
                     </div>
                 </div>
             </div>
