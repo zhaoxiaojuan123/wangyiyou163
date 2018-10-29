@@ -1,9 +1,14 @@
 import React from 'react';
-export default class Food extends React.Component{
+import RightContenttwo from '../public/RightContenttwo'
+import linebox from '../../../../server/mock/linebox'
+export default class Family extends React.Component{
+    constructor(){
+        super();
+        this.state={linebox:linebox}
+    }
     render(){
-        return <div className="autumn">
-            <span>456</span>
-
+        return <div>
+            <RightContenttwo data={this.state.linebox}/>
         </div>
     }
 }

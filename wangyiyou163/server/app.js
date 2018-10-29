@@ -23,11 +23,24 @@ app.get('/getSliders',function(req,res){
     res.json(sliders);
 });
 
-let headerImg=require('./mock/HeaderImg')
-app.get('/getHeaderImg/:title',function (req,res) {
-    let title=req.params.title;
-    let list = JSON.parse(JSON.stringify(headerImg));
-    res.json({list});
+let headerImg=require('./mock/leftnav')
+app.get('/getHeaderImg',function (req,res) {
+    res.json(headerImg);
+})
+
+let circleImg=require('./mock/Circledata')
+app.get('/getCircle',function (req,res) {
+    res.json(circleImg);
+})
+
+let autumnImg=require('./mock/autumndata')
+app.get('/getAutumn',function (req,res) {
+    res.json(autumnImg)
+})
+
+let newImg=require('./mock/new');
+app.get('/getNew',function (req,res) {
+    res.json(newImg)
 })
 
 let lessons = require('./mock/lessons');
@@ -74,4 +87,4 @@ app.post('/login',function(req,res){
   
 });
 
-app.listen(3001);
+app.listen(3002);

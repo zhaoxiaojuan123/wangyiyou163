@@ -1,10 +1,7 @@
 import React from 'react';
 import linebox from '../../../../server/mock/linebox'
 export default class Family extends React.Component{
-    constructor(){
-        super();
-        this.state={linebox:linebox}
-    }
+
     render(){
         return <div className="family">
             <div className="header-img">
@@ -13,7 +10,7 @@ export default class Family extends React.Component{
             <div className="content">
                 <div className="second">床品</div>
                 <ul>
-                    {this.state.linebox.map((item,index)=>{
+                    {this.props.data.map((item,index)=>{
                         return <li className="pic" key={index}>
                             <img src={item.img} alt=""/>
                             <p>{item.describe}</p>
@@ -22,7 +19,7 @@ export default class Family extends React.Component{
                 </ul>
                 <div className="second">床品</div>
                 <ul>
-                    {this.state.linebox.map((item,index)=>{
+                    {this.props.data.map((item,index)=>{
                         return <li className="pic" key={index}>
                             <img src={item.img} alt=""/>
                             <p>{item.describe}</p>
@@ -33,3 +30,4 @@ export default class Family extends React.Component{
         </div>
     }
 }
+

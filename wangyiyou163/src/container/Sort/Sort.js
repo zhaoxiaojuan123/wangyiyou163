@@ -7,11 +7,19 @@ import {connect} from 'react-redux';
 import action from '../../store/actionsll'
 
 class Sort extends React.Component {
+    constructor(){
+        super();
+    }
+    componentDidMount(){
+        this.props.getImgs()
+        this.props.getRightContent()
+    }
     render() {
-        console.log(this.props.type);
+        //console.log(this.props.nav);
+        //console.log(this.props.rightContent);
         return <div className="sort">
             <Search/>
-            <LeftNav  changeTypes={this.props.changeType}/>
+            <LeftNav  nav={this.props.nav||[]}/>
             <RightContent />
         </div>
 
