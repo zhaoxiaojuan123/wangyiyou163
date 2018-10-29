@@ -44,7 +44,6 @@ export default class Tui1 extends React.Component {
                 </div>
                 <div className="youtu">
                     <img src={imgyou} />
-                    <div className="topic">丁磊的好货推荐</div>
                 </div>
             </a>
             </div>
@@ -57,7 +56,6 @@ export default class Tui1 extends React.Component {
                 </div>
                 <div className="youtu">
                     <img src={imgyou2} />
-                    <div className="topic">挑款师推荐</div>
                 </div>
             </a>
             </div>
@@ -86,7 +84,6 @@ export default class Tui1 extends React.Component {
                 </div>
                 <div className="youtu">
                     <img src={imgyou3} />
-                    <div className="topic">丁磊的好货推荐</div>
                 </div>
             </a>
             </div>
@@ -99,7 +96,6 @@ export default class Tui1 extends React.Component {
                 </div>
                 <div className="youtu">
                     <img src={imgyou4} />
-                    <div className="topic">挑款师推荐</div>
                 </div>
             </a>
             </div>
