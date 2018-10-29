@@ -22,6 +22,11 @@ let sliders = require('./mock/sliders');
 app.get('/getSliders',function(req,res){
    res.json(sliders);
 });
+let homepersonal = require('./mock/homepersonal');
+app.get('/getPersonalSliders',function(req,res){
+   res.json(homepersonal);
+});
+
 let lessons = require('./mock/lessons');
 // http://localhost:3000/getLessons/vue?offset=0&limit=5
 app.get('/getLessons/:category',function(req,res){

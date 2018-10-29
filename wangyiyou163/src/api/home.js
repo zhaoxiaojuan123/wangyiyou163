@@ -4,6 +4,10 @@ export function getSliders(){
     
  return get("/getSliders")
 }
+export function getPersonalSliders(){
+    
+    return get("/getPersonalSliders")
+}
 // category 代表的是课程的类型
 //offset 代表的是偏移，页面已经加载多少条
 // limit 限制加载多少条

@@ -6,23 +6,26 @@ import actions from "../../../store/action/home"
 import "./index.less"
 import HomeBoss from "./HomeBoss";
 import HomeMenu from "./HomeMenu";
+import HomePersonal from "./HomePeasonel";
 class Recommend extends React.Component {
     constructor() {
         super();
     }
     componentWillMount() {
         this.props.getSlider();
+        // this.props.getPersonalSlider();
     }
 
     render() {
         // console.log(this.props.sliders,9999);   
+        // console.log(this.props.personals)
         return <div className='recommend'>
             <div className="indexFloor">
             {this.props.sliders.length?<HomeSlider sliders={this.props.sliders}></HomeSlider>:null}
                 <HomeGrow></HomeGrow>
                 <HomeBoss></HomeBoss>
                 <HomeMenu></HomeMenu>
-                {/* {this.props.children} */}
+                <HomePersonal></HomePersonal>
             </div>
         </div>
     }

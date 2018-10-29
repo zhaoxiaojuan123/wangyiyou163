@@ -1,5 +1,5 @@
 import * as Types from "../action-types"
-import {getSliders} from "../../api/home"
+import {getSliders,  getPersonalSliders} from "../../api/home"
 export default{
     getSlider(){
         return function(dispatch,getState){
@@ -13,6 +13,18 @@ export default{
 
             },0)
            
+        }
+    },
+    getPersonalSlider(){
+        return function(dispatch,getState){
+            setTimeout(()=>{
+                getPersonalSliders().then(homepersonal=>{
+                    dispatch({
+                        type:Types.SET_HOMEPERSONAL,
+                        payload:homepersonal 
+                    })
+                })
+            },0)
         }
     }
 }
