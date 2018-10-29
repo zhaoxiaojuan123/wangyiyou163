@@ -7,13 +7,14 @@ import "./index.less"
 import HomeBoss from "./HomeBoss";
 import HomeMenu from "./HomeMenu";
 import HomePersonal from "./HomePeasonel";
+import HomeflashSaleModule from "./HomeflashSaleModule";
 class Recommend extends React.Component {
     constructor() {
         super();
     }
     componentWillMount() {
         this.props.getSlider();
-        // this.props.getPersonalSlider();
+        this.props.getPersonalSlider();
     }
 
     render() {
@@ -26,6 +27,7 @@ class Recommend extends React.Component {
                 <HomeBoss></HomeBoss>
                 <HomeMenu></HomeMenu>
                 <HomePersonal></HomePersonal>
+                <HomeflashSaleModule></HomeflashSaleModule>
             </div>
         </div>
     }

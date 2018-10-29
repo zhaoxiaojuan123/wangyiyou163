@@ -19,7 +19,7 @@ export default class HomeHeaderRoute extends React.Component {
     render() {
         return <div className="hometop">
             <Switch>
-            <Route path="/home/recommend" exact component={Recommend}></Route>
+            <Route path="/home/recommend" exact={true} component={Recommend}></Route>
             <Route path="/home/live" component={Live}></Route>
             <Route path="/home/shoes" component={Shoes}></Route>
             <Route path="/home/clothes" component={Clothes}></Route>

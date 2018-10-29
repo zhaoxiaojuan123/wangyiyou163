@@ -11,12 +11,12 @@ class HomePersonal extends React.Component {
         this.props.getPersonalSlider();
         var mySwiper = new Swiper('.swiper-container', {
             autoplay: false,
+            loop : true,
             pagination: {
                 el: '.swiper-pagination',
             }
         })
     }
-
     render() {
         console.log(this.props.personals)
         return <div className="HomePersonal">
@@ -28,18 +28,16 @@ class HomePersonal extends React.Component {
             <div className="personalswiper">
                 <div className="swiper-container">
                     <div className="swiper-wrapper">
-
-
                     {this.props.personals.map((item,index)=>{
-                        <div className="swiper-slide" key={index}>
-                        {item.map((k,m)=>{
-                        return  <div className="swiper-content" key={m}>
+                       return  <div className="swiper-slide" key={index}>
+                        {item.map((item,index)=>{
+                        return  <div className="swiper-content" key={index}>
                         <div className="swiperimg">
-                        <img src={k.url} alt={k.url}/>
+                        <img src={item.url} alt={item.url}/>
                         </div>
                         <div className="swiperfooter">
-                            <span className="swipertitle">{k.title}</span>
-                            <span className="swiperprice">￥{k.price}</span>
+                            <span className="swipertitle">{item.title}</span>
+                            <span className="swiperprice">￥{item.price}</span>
                         </div>
                     </div>   
                         })}
@@ -49,9 +47,7 @@ class HomePersonal extends React.Component {
                 </div>
 
             </div>
-            <div className="swiper-pagination">
-
-            </div>
+           <div className="swiper-pagination"></div>
         </div>
     }
 }

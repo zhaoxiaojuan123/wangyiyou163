@@ -130,6 +130,7 @@
 .recommend .indexFloor .HomePersonal {
   width: 100%;
   height: 6rem;
+  border-bottom: #f5f5f5 solid 12px;
 }
 .recommend .indexFloor .HomePersonal .moduleTitle {
   width: 100%;
@@ -152,33 +153,41 @@
 .recommend .indexFloor .HomePersonal .personalswiper {
   width: 100%;
   height: 3.9rem;
-  background: #7f7f7f;
+}
+.recommend .indexFloor .HomePersonal .personalswiper .swiper-container {
+  text-align: center;
 }
 .recommend .indexFloor .HomePersonal .personalswiper .swiper-container .swiper-wrapper {
   width: 100%;
   height: 100%;
 }
 .recommend .indexFloor .HomePersonal .personalswiper .swiper-container .swiper-wrapper .swiper-slide {
-  width: 90%;
+  width: 100%;
   height: 3.9rem;
-  margin: auto;
-  background: red;
   display: flex;
 }
 .recommend .indexFloor .HomePersonal .personalswiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content {
+  text-align: center;
   flex: 1;
-  background: yellow;
-  border-left: 0.4rem solid #333;
+  border-left: 0.5rem solid #fff;
 }
 .recommend .indexFloor .HomePersonal .personalswiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content .swiperimg {
   width: 100%;
-  height: 80%;
-  background: red;
+  height: 70%;
+}
+.recommend .indexFloor .HomePersonal .personalswiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content .swiperimg img {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+}
+.recommend .indexFloor .HomePersonal .personalswiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content:nth-child(3) {
+  border-right: 0.5rem solid #fff;
 }
 .recommend .indexFloor .HomePersonal .personalswiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content .swiperfooter {
   width: 100%;
 }
 .recommend .indexFloor .HomePersonal .personalswiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content .swiperfooter .swipertitle {
+  margin-top: 0.3rem;
   color: #333;
   font-size: 12px;
 }
@@ -188,11 +197,10 @@
 .recommend .indexFloor .HomePersonal .swiper-pagination {
   width: 100%;
   height: 0.8rem;
-  background: #7f7f7f;
 }
 .recommend .indexFloor .HomePersonal .swiper-pagination .swiper-pagination-bullet {
   margin-left: 0.1rem;
-  background: #7f7f7f;
+  background: #333;
 }
 .recommend .indexFloor .HomePersonal .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #b4282d;

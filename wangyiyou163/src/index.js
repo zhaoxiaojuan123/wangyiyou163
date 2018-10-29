@@ -15,14 +15,14 @@ ReactDOM.render(
     <Provider store={store}>
         <App>
             <Switch>
-            <Route path='/' exact={true} component={Home} />
+            {/* <Route path='/' exact={true} component={Home} /> */}
             <Route path='/home'   component={Home} />
             <Route path='/goods' component={Goods} />
             <Route path='/sort' component={Sort} />
             <Route path='/cart' component={Cart} />
             <Route path='/personal' component={Personal} />
             {/* <Route path='/search' component={Search} /> */}
-            <Route path='/home/recommend'  component={Home}/>
+            <Route path='/home/recommend' exact={true} component={Home}/>
             {/* <Redirect to="/home"/> */}
             </Switch>
             

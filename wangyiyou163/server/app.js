@@ -26,6 +26,10 @@ let homepersonal = require('./mock/homepersonal');
 app.get('/getPersonalSliders',function(req,res){
    res.json(homepersonal);
 });
+let homeflashsale = require('./mock/homepersonal');
+app.get('/getHomeFlashsales',function(req,res){
+   res.json(homeflashsale);
+});
 
 let lessons = require('./mock/lessons');
 // http://localhost:3000/getLessons/vue?offset=0&limit=5
