@@ -2,8 +2,8 @@ import React from "react";
 import './index.less';
 import BackHeader from "../../../component/BackHeader/BackHeader";
 import {NavLink} from "react-router-dom";
-import PhoneInput from "./phoneInput";
-export default class PhonelLogin extends React.Component{
+import CodeInput from "./codeInput";
+export default class CodeLogin extends React.Component{
     render(){
         return <div className="login">
             <BackHeader/>
@@ -13,10 +13,10 @@ export default class PhonelLogin extends React.Component{
                         <img src="//yanxuan.nosdn.127.net/bd139d2c42205f749cd4ab78fa3d6c60.png"></img>
                     </div>
                    
-                    <PhoneInput/>
-                    <NavLink to="/codelogin">
+                    <CodeInput/>
+                    <NavLink to="/phonelogin">
                         <div className="u-tab f-cb">
-                            <span>使用密码验证登录</span>
+                            <span>使用短信验证登录</span>
                         </div>
                     </NavLink>
                     

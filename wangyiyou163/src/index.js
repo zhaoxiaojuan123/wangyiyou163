@@ -14,6 +14,7 @@ import PhonelLogin from "./container/Personal/login/PhoneLogin";
 import EmailLogin from "./container/Personal/login/EmailLogin";
 import PhonelReg from "./container/Personal/Reg/PhoneReg";
 import Loginsuccess from "./container/Personal/login/loginsuccess";
+import CodeLogin from "./container/Personal/login/codelogin";
 
 
 ReactDOM.render(<Router>
@@ -28,8 +29,10 @@ ReactDOM.render(<Router>
             <Route path='/personal' component={Personal} />
 
             <Route path='/phonelogin' component={PhonelLogin}/>
+            <Route path='/codelogin' component={CodeLogin}/>
             <Route path='/emaillogin' component={EmailLogin}/>
             <Route path="/loginsuccess" component={Loginsuccess}></Route>
+
             <Route path='/phonereg' component={PhonelReg}/>
         </App>
         

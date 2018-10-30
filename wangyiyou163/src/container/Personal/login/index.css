@@ -5,6 +5,10 @@
   width: 100%;
   overflow: hidden;
 }
+.login .loginWrap a {
+  text-decoration: none;
+  color: #333;
+}
 .login .loginWrap .logo {
   text-align: center;
   margin-top: 0.74667rem;
@@ -28,6 +32,9 @@
 .login .loginWrap .foot {
   padding: 0 0.53333rem;
 }
+.login .loginWrap .foot a {
+  text-decoration: none;
+}
 .login .loginWrap .foot .loginbox {
   position: relative;
   margin: 0.426rem 0 0.313rem 0;
@@ -49,9 +56,6 @@
   cursor: pointer;
   text-align: center;
   color: #fff;
-}
-.login .loginWrap .foot a {
-  text-decoration: none;
 }
 .login .loginWrap .foot .w-button {
   border-radius: 2px;

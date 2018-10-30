@@ -1,6 +1,6 @@
 import React from "react";
 import "./loginsuccess.less";
-
+import {NavLink} from "react-router-dom";
 export default class Loginsuccess extends React.Component{
     render(){
         return <div>
@@ -9,7 +9,7 @@ export default class Loginsuccess extends React.Component{
                     <div className="left">
                         <img className="avatar" src="//yanxuan.nosdn.127.net/8945ae63d940cc42406c3f67019c5cb6.png"></img>
                         <div className="info">
-                            <p className="nickname">18332119500</p>
+                            <p className="nickname">18332129653</p>
                             <div className="membershipLevel">
                                 <span className="memberTitle0">普通用户</span>
                             </div>
@@ -113,9 +113,12 @@ export default class Loginsuccess extends React.Component{
                 </ul>
             </div>
 
-            <div className="g-button">
+            <NavLink to="/">
+                <div className="g-button">
                     <button className="w-button">退出登录</button>                
-            </div>
+                </div>
+            </NavLink>
+            
        
         </div>
             
