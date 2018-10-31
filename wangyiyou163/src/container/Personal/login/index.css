@@ -139,3 +139,31 @@
 .inputbox .u-input .m-unlogin .forget {
   margin-left: 5.2rem;
 }
+<<<<<<< HEAD
+=======
+.inputbox .u-input .loginbox {
+  position: relative;
+  margin: 0.426rem 0 0.313rem 0;
+  top: 0;
+  left: 0;
+  bottom: 0.426rem;
+  width: 100%;
+}
+.inputbox .u-input .loginbox a {
+  text-decoration: none;
+}
+.inputbox .u-input .loginbox .u-loginbtn {
+  position: relative;
+  margin-left: 0.4rem;
+  background: #b4282d;
+  height: 1.28rem;
+  font-size: 0.4rem;
+  line-height: 1.28rem;
+  border-radius: 3px;
+  display: block;
+  width: 95%;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+}
+>>>>>>> 登录注册

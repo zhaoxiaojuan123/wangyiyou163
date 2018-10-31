@@ -14,12 +14,19 @@ export default class PhonelLogin extends React.Component{
                     </div>
                    
                     <PhoneInput/>
+<<<<<<< HEAD
                     <NavLink to="/codelogin">
                         <div className="u-tab f-cb">
                             <span>使用密码验证登录</span>
                         </div>
                     </NavLink>
                     
+=======
+
+                    <div className="u-tab f-cb">
+                        <a className="tab0">使用密码验证登录</a>
+                    </div>
+>>>>>>> 登录注册
 
                     <div className="foot">
                         <NavLink to="/loginsuccess">

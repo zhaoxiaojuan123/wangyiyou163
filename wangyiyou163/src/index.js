@@ -14,7 +14,10 @@ import PhonelLogin from "./container/Personal/login/PhoneLogin";
 import EmailLogin from "./container/Personal/login/EmailLogin";
 import PhonelReg from "./container/Personal/Reg/PhoneReg";
 import Loginsuccess from "./container/Personal/login/loginsuccess";
+<<<<<<< HEAD
 import CodeLogin from "./container/Personal/login/codelogin";
+=======
+>>>>>>> 登录注册
 
 
 ReactDOM.render(<Router>
@@ -32,7 +35,10 @@ ReactDOM.render(<Router>
             <Route path='/codelogin' component={CodeLogin}/>
             <Route path='/emaillogin' component={EmailLogin}/>
             <Route path="/loginsuccess" component={Loginsuccess}></Route>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 登录注册
             <Route path='/phonereg' component={PhonelReg}/>
         </App>
         

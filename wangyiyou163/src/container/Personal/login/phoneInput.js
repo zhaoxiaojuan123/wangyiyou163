@@ -1,5 +1,9 @@
 import React from "react";
 import './index.less';
+<<<<<<< HEAD
+=======
+import {NavLink} from "react-router-dom";
+>>>>>>> 登录注册
 export default class PhoneInput extends React.Component{
     render(){
         return <div className="inputbox">
@@ -14,6 +18,14 @@ export default class PhoneInput extends React.Component{
                 <div className="m-unlogin">
                     <a className="forgetpwdReg" data-outlink="1" href="https://mob.163.com/web/helpcenter?from=webzj" target="_blank">遇到问题？</a>
                 </div>
+<<<<<<< HEAD
+=======
+                <NavLink to="/loginsuccess">
+                    <div className="f-cb loginbox">
+                      <a className="u-loginbtn">登录</a>
+                    </div>
+                </NavLink>
+>>>>>>> 登录注册
                 
             </div>
             
