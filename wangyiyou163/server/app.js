@@ -20,8 +20,9 @@ app.use(function(req,res,next){
 app.use(bodyParser.json());
 let sliders = require('./mock/sliders');
 app.get('/getSliders',function(req,res){
-   res.json(sliders);
+    res.json(sliders);
 });
+<<<<<<< HEAD
 let homepersonal = require('./mock/homepersonal');
 app.get('/getPersonalSliders',function(req,res){
    res.json(homepersonal);
@@ -31,6 +32,73 @@ app.get('/getHomeFlashsales',function(req,res){
    res.json(homeflashsale);
 });
 
+=======
+<<<<<<< HEAD
+
+let headerImg=require('./mock/leftnav')
+app.get('/getHeaderImg',function (req,res) {
+    res.json(headerImg);
+})
+
+let circleImg=require('./mock/Circledata')
+app.get('/getCircle',function (req,res) {
+    res.json(circleImg);
+})
+
+let autumnImg=require('./mock/autumndata')
+app.get('/getAutumn',function (req,res) {
+    res.json(autumnImg)
+})
+
+let newImg=require('./mock/new');
+app.get('/getNew',function (req,res) {
+    res.json(newImg)
+});
+
+let bagImg=require('./mock/bag')
+app.get('/getBag',function (req,res) {
+    res.json(bagImg);
+})
+
+let washImg=require('./mock/wash')
+app.get('/getWash',function (req,res) {
+    res.json(washImg);
+})
+
+let clothesImg=require('./mock/clothes')
+app.get('/getClothes',function (req,res) {
+    res.json(clothesImg);
+})
+=======
+// wode
+let pubu=require('./mock/pubu');
+app.get("/pubu",function(req,res){
+  res.json(pubu)
+})
+// wode getpubus
+let pubus=require('./mock/pubu');
+// http://localhost:3001/getpubus/tu?offset=0&limit=4
+
+app.get('/getpubus/:category',function(req,res){
+  let category = req.params.category;// all react vue 当前的分类
+  let {offset,limit} = req.query;
+  offset = isNaN(offset)?0:parseInt(offset);//起始的索引
+  limit = isNaN(limit)?4:parseInt(limit);//每页的条数
+  let list = JSON.parse(JSON.stringify(pubus));//深度克隆pubus
+ 
+  
+  let total = list.length;//此分类下面的总条数
+  list = list.slice(offset,offset+limit);//截取当前页的数据
+  list.forEach(item=>item.title = item.title);
+  res.json({
+      list,
+      hasMore:total>offset+limit
+  });
+});
+
+//--------------------------------------------
+>>>>>>> 70e69dcb8327abe2677674f1f5377fa4d570994d
+>>>>>>> cde8079415859dcb0088d8131cac1a6e7688179c
 let lessons = require('./mock/lessons');
 // http://localhost:3000/getLessons/vue?offset=0&limit=5
 app.get('/getLessons/:category',function(req,res){
@@ -75,4 +143,4 @@ app.post('/login',function(req,res){
   
 });
 
-app.listen(3001);
+app.listen(3002);
