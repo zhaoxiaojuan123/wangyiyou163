@@ -1,18 +1,29 @@
 import * as Types from '../action-types';
-import {combineReducers} from 'redux'
-
-let initState1={
-   num:0,
-   ary:[]
-};
-function home(state={},action) {
+import {combineReducers} from 'redux' // 我的
   
+let initState = {
+    currentTypes: 'tu',
+    ary:{
+        list:[], // 存储当前已经加载图片的顺序数据
+        offset:0, // 代表当前页面已经加载多少条
+        limit:4,
+        hasMore:true // wode
+    }
+}
+function home(state={},action) {
     return state;
 };
-function puboo(state=initState1,action) {
+function puboo(state=initState,action) {
     switch(action.type){
-       case Types.PUBU:
-       return {...state,ary:action.payload}
+       case Types.PUBU_GET:
+       return {
+        ...state,ary:{
+            list:[...state.ary.list,...action.payload.list],
+            offset:state.ary.offset+state.ary.list.length,
+            limit:4,
+            hasMore:action.payload.hasMore
+        }
+    }
     }
   
     return state;

@@ -1,1 +1,1 @@
-export const PUBU='const'
+export const PUBU_GET='PUBU_GET'
