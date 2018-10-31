@@ -22,7 +22,7 @@ let sliders = require('./mock/sliders');
 app.get('/getSliders',function(req,res){
     res.json(sliders);
 });
-<<<<<<< HEAD
+
 let homepersonal = require('./mock/homepersonal');
 app.get('/getPersonalSliders',function(req,res){
    res.json(homepersonal);
@@ -32,8 +32,7 @@ app.get('/getHomeFlashsales',function(req,res){
    res.json(homeflashsale);
 });
 
-=======
-<<<<<<< HEAD
+
 
 let headerImg=require('./mock/leftnav')
 app.get('/getHeaderImg',function (req,res) {
@@ -69,7 +68,7 @@ let clothesImg=require('./mock/clothes')
 app.get('/getClothes',function (req,res) {
     res.json(clothesImg);
 })
-=======
+
 // wode
 let pubu=require('./mock/pubu');
 app.get("/pubu",function(req,res){
@@ -96,9 +95,6 @@ app.get('/getpubus/:category',function(req,res){
   });
 });
 
-//--------------------------------------------
->>>>>>> 70e69dcb8327abe2677674f1f5377fa4d570994d
->>>>>>> cde8079415859dcb0088d8131cac1a6e7688179c
 let lessons = require('./mock/lessons');
 // http://localhost:3000/getLessons/vue?offset=0&limit=5
 app.get('/getLessons/:category',function(req,res){
