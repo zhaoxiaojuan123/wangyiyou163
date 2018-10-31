@@ -22,6 +22,7 @@ let sliders = require('./mock/sliders');
 app.get('/getSliders',function(req,res){
     res.json(sliders);
 });
+<<<<<<< HEAD
 
 let headerImg=require('./mock/leftnav')
 app.get('/getHeaderImg',function (req,res) {
@@ -57,6 +58,35 @@ let clothesImg=require('./mock/clothes')
 app.get('/getClothes',function (req,res) {
     res.json(clothesImg);
 })
+=======
+// wode
+let pubu=require('./mock/pubu');
+app.get("/pubu",function(req,res){
+  res.json(pubu)
+})
+// wode getpubus
+let pubus=require('./mock/pubu');
+// http://localhost:3001/getpubus/tu?offset=0&limit=4
+
+app.get('/getpubus/:category',function(req,res){
+  let category = req.params.category;// all react vue 当前的分类
+  let {offset,limit} = req.query;
+  offset = isNaN(offset)?0:parseInt(offset);//起始的索引
+  limit = isNaN(limit)?4:parseInt(limit);//每页的条数
+  let list = JSON.parse(JSON.stringify(pubus));//深度克隆pubus
+ 
+  
+  let total = list.length;//此分类下面的总条数
+  list = list.slice(offset,offset+limit);//截取当前页的数据
+  list.forEach(item=>item.title = item.title);
+  res.json({
+      list,
+      hasMore:total>offset+limit
+  });
+});
+
+//--------------------------------------------
+>>>>>>> 70e69dcb8327abe2677674f1f5377fa4d570994d
 let lessons = require('./mock/lessons');
 // http://localhost:3000/getLessons/vue?offset=0&limit=5
 app.get('/getLessons/:category',function(req,res){

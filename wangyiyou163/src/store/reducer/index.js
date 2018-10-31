@@ -1,4 +1,5 @@
 import * as Types from '../action-types';
+<<<<<<< HEAD
 import {combineReducers} from 'redux'
 let initState={
     type:'recommoned',
@@ -29,13 +30,46 @@ function sort(state=initState,action) {
         case Types.GET_CLOTHES:
             return {...state,clothes:action.payload}
     }
+=======
+import {combineReducers} from 'redux' // 我的
+  
+let initState = {
+    currentTypes: 'tu',
+    ary:{
+        list:[], // 存储当前已经加载图片的顺序数据
+        offset:0, // 代表当前页面已经加载多少条
+        limit:4,
+        hasMore:true // wode
+    }
+}
+function home(state={},action) {
+    return state;
+};
+function puboo(state=initState,action) {
+    switch(action.type){
+       case Types.PUBU_GET:
+       return {
+        ...state,ary:{
+            list:[...state.ary.list,...action.payload.list],
+            offset:state.ary.offset+state.ary.list.length,
+            limit:4,
+            hasMore:action.payload.hasMore
+        }
+    }
+    }
+  
+>>>>>>> 70e69dcb8327abe2677674f1f5377fa4d570994d
     return state;
 };
 
-
 //合并reducers
 let reducer=combineReducers({
+<<<<<<< HEAD
     sort,
+=======
+    home,
+    puboo
+>>>>>>> 70e69dcb8327abe2677674f1f5377fa4d570994d
   
 });
 export default reducer;
