@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.sort{
+  .write{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    height: 1.17rem;
+    line-height: 1.17rem;
+    width: 92%;
+    padding: 0  0.4rem  0  0.4rem;
+    border-bottom:1px solid #cccccc;
+    background: #ffffff;
+    .search{
+      width: 100%;
+      height: 0.74rem;
+      line-height: 0.74rem;
+      margin-top: 0.2rem;
+      background-color: #ededed;
+      border-radius: .1rem;
+      box-sizing: border-box;
+      border: 1px solid #f7f7f7;
+      a{
+        text-decoration: none;
+        i{
+          margin-left: 2rem;
+          font-size: 0.37rem;
+          margin-right: 0.13rem;
+        }
+        span{
+          font-size: 0.37rem;
+          color: #666;
+        }
+      }
+    }
+  }
+  .leftnav::-webkit-scrollbar { width: 0 !important }
+  .leftnav{
+    width: 2.16rem;
+    position: fixed;
+    left: 0;
+    top:1.18rem;
+    border-right: 1px solid #cccccc;
+    height: 100%;
+    z-index: 1;
+    line-height: 1.7;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    a{
+      text-decoration: none;
+      padding: 0.53rem;
+      height: 0.66rem;
+      width: 100%;
+      font-size: 0.37rem;
+      text-align: center;
+      color: #333;
+      position: relative;
+      margin-top: 0.53rem;
+    }
+    a.active{
+      color: #ab2b2b;
+
+    }
+    a.active ::before{
+      content: '';
+      position: absolute;
+      top:0;
+      left: 0;
+      bottom: 0;
+      width: 0.08rem;
+      background:#ab2b2b ;
+    }
+  }
+  .right-content{
+    margin-left: 2.16rem;
+    margin-top: 1.17rem;
+    padding: 0.4rem 0.4rem  0.28rem;
+    height: 100%;
+  }
+}

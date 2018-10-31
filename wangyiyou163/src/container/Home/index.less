@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    // overflow: auto;
+}
+@r:350/10rem;
+.Home{
+    width: 100%;
+    background: #ffff;
+    .HomeHeader{
+        // overflow: auto;
+        width: 100%;
+        height: 85/@r;
+        top: 0;
+        position: fixed;
+        background: #ffff;
+        border-bottom: 0.008px solid #ccc;
+        z-index: 99;
+        .line{
+            width: 100%;
+            height:25/@r;
+            // align-items: center;
+            padding: .4rem .4rem;
+            background: #ffff;
+            font-size: 24px;
+            // float: left;
+            display: inline-block;
+            position: relative;
+            .logo{
+                position: absolute;
+                width: 1.84rem;
+                height: .53333rem;
+                // top:0.6rem;
+                background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-11d65342f9.png);
+                display: inline-block;
+                margin-right: .26667rem;
+                background-size: cover;
+                background-position: center;
+                // background: #ffff;
+                // float: left;
+            }
+            .topSearchIpt{
+                position: absolute;
+                width: 250/@r;
+                height: 30/@r;
+                background:  rgb(237, 237, 237);
+                font-size: 15px;
+                color: rgb(102, 102, 102);
+                border-radius: 5px; 
+                margin-left:2.1rem;
+                .place{
+                    // background: #ffff;
+                    line-height:30/@r;   
+                    margin: auto;
+                    text-align:center;
+                    
+                }
+            
+            }
+        }
+        .tabs{
+            width: 100%;
+            height: 25/@r;
+            overflow: hidden;
+            position: relative;
+            // background: #ffff;
+            // border-bottom: 0.1px solid #ccc;
+            .list{
+                height: 100%;
+                position: relative;
+             
+                a{
+                   
+                    .tab{
+                      
+                        width: 20%;
+                        height:100%;
+                        float: left;
+                        font-size: 15px;
+                        color: rgb(51, 51, 51);
+                        position: relative;
+                        text-align:center; 
+                        margin: auto;    
+                        .txt{ 
+                            width: 90%;
+                            line-height:30/@r;  
+                            position: relative;
+                        }
+                       
+                       
+                    }
+                  
+                }  
+                a.active{
+                        .tab{
+                      
+                            width: 20%;
+                            height:100%;
+                            float: left;
+                            font-size: 15px;
+                            color: rgb(180, 40, 45);
+                            position: relative;
+                            text-align:center; 
+                            margin: auto; 
+                            // border-bottom: 10px solid rgb(180, 40, 45);    
+                            .txt{ 
+                                width: 90%;
+                                line-height:30/@r;  
+                                position: relative;
+                                   border-bottom: 18px solid rgb(180, 40, 45);
+                            }
+                           
+                           
+                        }
+
+                     
+                       
+            }        
+            }
+        }
+    }
+    
+    .hometop{
+        margin-top:2.5rem;
+        width: 100%;
+    }
+}
