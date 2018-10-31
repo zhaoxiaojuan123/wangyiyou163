@@ -13,8 +13,11 @@ import Search from './component/Search/Search'
 import PhonelLogin from "./container/Personal/login/PhoneLogin";
 import EmailLogin from "./container/Personal/login/EmailLogin";
 import PhonelReg from "./container/Personal/Reg/PhoneReg";
+<<<<<<< HEAD
 import Loginsuccess from "./container/Personal/login/loginsuccess";
 import CodeLogin from "./container/Personal/login/codelogin";
+=======
+>>>>>>> 第一次提交
 
 
 ReactDOM.render(<Router>
@@ -34,6 +37,10 @@ ReactDOM.render(<Router>
             <Route path="/loginsuccess" component={Loginsuccess}></Route>
 
             <Route path='/phonereg' component={PhonelReg}/>
+<<<<<<< HEAD
+=======
+            {/* <Route path='/emailreg' component={EmailReg}/> */}
+>>>>>>> 第一次提交
         </App>
         
     </Provider>

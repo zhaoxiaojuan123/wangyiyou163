@@ -10,7 +10,13 @@ export default class PhonelReg extends React.Component{
                 <div className="title">
                     <span>手机号注册</span>
                 </div>
+<<<<<<< HEAD
                 <RegInput/>
+=======
+                {/* <div className="usrBox usrBox-3"> */}
+                    <RegInput/>
+                {/* </div> */}
+>>>>>>> 第一次提交
                 
                 <div className="foot">
                 <a href="https://zc.reg.163.com/m/regInitialized?pd=yanxuan&pkid=QyOtTGv&pkht=you.163.com&tp=2&as=3&curl=http%3A%2F%2Fm.you.163.com%2Fucenter">
