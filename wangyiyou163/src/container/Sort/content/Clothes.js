@@ -1,14 +1,17 @@
 import React from 'react';
-import RightContenttwo from '../public/RightContenttwo'
-import linebox from '../../../../server/mock/linebox'
-export default class Family extends React.Component{
-    constructor(){
-        super();
-        this.state={linebox:linebox}
+import Right from '../public/Right'
+import linebox from '../../../../server/mock/linebox';
+import {connect} from 'react-redux';
+import action from '../../../store/actionsll'
+class Clothes extends React.Component{
+    componentDidMount(){
+        this.props.getClothesImg()
     }
     render(){
+        //console.log(this.props);
         return <div>
-            <RightContenttwo data={this.state.linebox}/>
+            <Right data={this.props.clothes}/>
         </div>
     }
 }
+export default connect(state=>({...state.sort}),action)(Clothes)

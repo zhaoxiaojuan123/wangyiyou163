@@ -41,8 +41,22 @@ app.get('/getAutumn',function (req,res) {
 let newImg=require('./mock/new');
 app.get('/getNew',function (req,res) {
     res.json(newImg)
+});
+
+let bagImg=require('./mock/bag')
+app.get('/getBag',function (req,res) {
+    res.json(bagImg);
 })
 
+let washImg=require('./mock/wash')
+app.get('/getWash',function (req,res) {
+    res.json(washImg);
+})
+
+let clothesImg=require('./mock/clothes')
+app.get('/getClothes',function (req,res) {
+    res.json(clothesImg);
+})
 let lessons = require('./mock/lessons');
 // http://localhost:3000/getLessons/vue?offset=0&limit=5
 app.get('/getLessons/:category',function(req,res){

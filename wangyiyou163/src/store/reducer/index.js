@@ -6,6 +6,9 @@ let initState={
     rightContent:[],
     autumn:[],
     new:[],
+    bag:[],
+    wash:[],
+    clothes:[]
 };
 function sort(state=initState,action) {
     switch (action.type){
@@ -18,7 +21,13 @@ function sort(state=initState,action) {
         case Types.GET_AUTUMN:
             return {...state,autumn:action.payload};
         case Types.GET_NEW:
-            return {...state,new:action.payload}
+            return {...state,new:action.payload};
+        case Types.GET_BAG:
+            return {...state,bag:action.payload};
+        case Types.GET_WASH:
+            return {...state,wash:action.payload};
+        case Types.GET_CLOTHES:
+            return {...state,clothes:action.payload}
     }
     return state;
 };

@@ -18,7 +18,6 @@ export default class Recommend extends React.Component{
                     </li>
                 })}
             </ul>
-
         </div>
     }
 }

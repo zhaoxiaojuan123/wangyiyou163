@@ -13,3 +13,12 @@ export function getAutumn() {
 export function getNew() {
     return get('/getNew')
 }
+export function getBag() {
+    return get('/getBag')
+}
+export function getWash() {
+  return get('/getWash')
+}
+export function getClothes() {
+    return get('/getClothes')
+}

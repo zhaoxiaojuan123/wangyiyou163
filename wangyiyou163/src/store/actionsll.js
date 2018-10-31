@@ -1,5 +1,5 @@
 import * as Types from './action-types'
-import {getImg,getRight,getAutumn,getNew} from '../api/HeaderImg'
+import {getImg,getRight,getAutumn,getNew,getBag,getWash,getClothes} from '../api/HeaderImg'
 export default {
     // changeType(val){
     //   return {type:Types.CHANGE_TYPE,val}
@@ -41,6 +41,36 @@ export default {
                 dispatch({
                     type:Types.GET_NEW,
                     payload:newImg
+                })
+            })
+        }
+    },
+    getBagImg(){
+        return function (dispatch,getState) {
+            getBag().then(bagImg=>{
+                dispatch({
+                    type:Types.GET_BAG,
+                    payload:bagImg
+                })
+            })
+        }
+    },
+    getWashImg(){
+        return function (dispatch,getState) {
+            getWash().then(washImg=>{
+                dispatch({
+                    type:Types.GET_WASH,
+                    payload:washImg
+                })
+            })
+        }
+    },
+    getClothesImg(){
+        return function (dispatch,getState) {
+            getClothes().then(clothesImg=>{
+                dispatch({
+                    type:Types.GET_CLOTHES,
+                    payload:clothesImg
                 })
             })
         }
