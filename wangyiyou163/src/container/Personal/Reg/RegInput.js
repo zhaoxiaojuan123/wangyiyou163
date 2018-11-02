@@ -1,7 +1,7 @@
 import React from "react";
 import './index.less';
 export default class RegInput extends React.Component{
-<<<<<<< HEAD
+
     handleReg=()=>{
         let username=this.username.value;
         let password=this.password.value;
@@ -10,20 +10,15 @@ export default class RegInput extends React.Component{
     render(){
         return <div className="inputbox">
             <div className="u-input">
-                <input type="text" placeholder="请输入手机号" ref={x=>{this.username=x}}></input>
-=======
-    render(){
-        return <div className="inputbox">
-            <div className="u-input">
                 <input type="text" placeholder="请输入手机号"></input>
->>>>>>> 第一次提交
+
                 <input type="text" placeholder="请输入短信验证码">
                 
                 </input>
                 <div className="pcbtn f-f1">
                     <a href="" className="tabfocus getsmscode">获取验证码</a>
                 </div>
-<<<<<<< HEAD
+
                 <input type="text" placeholder="请输入密码"  ref={x=>{this.password=x}}>
                 
                 </input>
@@ -41,7 +36,7 @@ export default class RegInput extends React.Component{
                     和 
                     <a href="//reg.163.com/agreement_mobile_ysbh.shtml">《网易隐私政策》</a>
              </div>
-=======
+
                 <input type="text" placeholder="请输入密码">
                 
                 </input>
@@ -50,8 +45,6 @@ export default class RegInput extends React.Component{
                 </div>
                 
             </div>
->>>>>>> 第一次提交
-            
         </div>
     }
 }
